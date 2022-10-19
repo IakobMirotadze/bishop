@@ -4,6 +4,8 @@
   "description": "",
   "main": "ecosystem.config.js",
   "scripts": {
+    "build": "npm run allnpmbuild",
+    "start": "npm run allnpmstart",
     "allnpmi": "cd website && npm i -f   && cd ../admin && npm i -f   && cd ../backend && npm i -f   ",
     "allnpmdev": " cd admin && npm run dev   & cd backend && nodemon server.js & cd website && npm run dev ",
     "allnpmbuild": "cd website && npm  run build   && cd ../admin && npm run build  && cd ..",
