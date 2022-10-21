@@ -3,7 +3,7 @@ const jsonConfig = {
 
     API_URL: "http://188.40.156.189/api/",
     WEBSITE_URL: "http://188.40.156.189/api",
-    IMG_URL: "http://188.40.156.189/api/",
+    IMG_URL: "http://188.40.156.189/api",
 
     maillerConfig: {
         // host: 'smtp.gmail.com',
