@@ -1,9 +1,9 @@
 
 const jsonConfig = {
 
-    API_URL: "https://backend.nextly.shop",
-    WEBSITE_URL: "https://nextly.shop",
-    IMG_URL: "https://backend.nextly.shop",
+    API_URL: "https://http://188.40.156.189/api",
+    WEBSITE_URL: "https://http://188.40.156.189",
+    IMG_URL: "https://http://188.40.156.189/api/",
 
     maillerConfig: {
         // host: 'smtp.gmail.com',
