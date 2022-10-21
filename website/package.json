@@ -2,7 +2,7 @@
   "name": "Nextly-eCommerce-website",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "next --port 80",
     "watch:less": "watch 'npm run goless && npm run dev'  ./public/less",
     "build": "next build",
     "start": "next start",
