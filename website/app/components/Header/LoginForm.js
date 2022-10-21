@@ -39,7 +39,7 @@ const Default = ({ onSubmitLogin, handleCancelLogin }) => {
             <Form.Item>
                <Button
                   type="primary"
-                  className="mb-0 w-full"
+                  className="w-full border-brand-color bg-brand-color text-xl h-auto  hover:bg-white hover:border-brand-color hover:text-brand-color"
                   size="large"
                   htmlType="submit"
                >
