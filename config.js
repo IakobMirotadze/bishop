@@ -1,7 +1,7 @@
 
 const jsonConfig = {
 
-    API_URL: "https://estores.ge/api",
+    API_URL: "http://estores.ge/api",
     WEBSITE_URL: "https://www.estores.ge",
     IMG_URL: "https://estores.ge/api/",
 
