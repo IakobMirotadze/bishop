@@ -22,10 +22,9 @@
 @import "./node_modules/antd/lib/message/style/index-pure.less";
 @import "./node_modules/antd/lib/badge/style/index-pure.less";
 
-@primary-color: #f27a1b ;
+@primary-color: #1890ff ;
 button, [type='button'], [type='reset'], [type='submit'] {
   -webkit-appearance: button;
-  background-color: sdasd;
   background-image: none;
 }
 .ant-layout {
@@ -34,6 +33,16 @@ button, [type='button'], [type='reset'], [type='submit'] {
 .ant-input-search-button{
   background-color:@primary-color!important
 }
+
+.searchInput {
+  border-radius: 24px;
+  color: #00000073
+}
+
+.searchInput input {
+  padding-left: 8px;
+}
+
 html,
 body {
   height: 100%;
@@ -45,7 +54,7 @@ a {
   text-decoration: none;
 }
 
-.anticon svg { 
+.anticon svg {
   display: block;
 }
 
@@ -109,9 +118,9 @@ li .ant-menu-submenu-title .ant-menu-title-content {
   }
 }
 
- 
 
- 
+
+
 
 /*topmenu*/
 ul.topmenu {
