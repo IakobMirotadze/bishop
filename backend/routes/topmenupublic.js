@@ -3,7 +3,7 @@ let Topmenu = require("../models/topmenu.model");
 
 // get all items
 router.route("/:id").get((req, res) => {
-   if (req.params.id == "not") {
+   if (req.params.id === "not") {
       Topmenu.find(
          {},
          {
@@ -22,7 +22,7 @@ router.route("/:id").get((req, res) => {
          })
          .catch((err) =>
             res.json({
-               messagge: "Error: " + err,
+               messagge: "Error: " + err + req?.params?.id,
                variant: "error",
             })
          );
@@ -34,7 +34,7 @@ router.route("/:id").get((req, res) => {
          })
          .catch((err) =>
             res.json({
-               messagge: "Error: " + err + req.params.id,
+               messagge: "Error: " + err + req?.params?.id,
                variant: "error",
             })
          );
