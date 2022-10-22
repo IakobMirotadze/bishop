@@ -22,7 +22,7 @@ router.route("/:id").get((req, res) => {
          })
          .catch((err) =>
             res.json({
-               messagge: "Error: " + err + req?.params?.id,
+               message: "Error: raooo" + err + req?.params?.id,
                variant: "error",
             })
          );
