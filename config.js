@@ -1,9 +1,9 @@
 
 const jsonConfig = {
 
-    API_URL: "http://estores.ge/api",
-    WEBSITE_URL: "http://www.estores.ge",
-    IMG_URL: "http://estores.ge/api/",
+    API_URL: "https://estores.ge/api",
+    WEBSITE_URL: "https://www.estores.ge",
+    IMG_URL: "https://estores.ge/api/",
 
     maillerConfig: {
         // host: 'smtp.gmail.com',
