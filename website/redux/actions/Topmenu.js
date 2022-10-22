@@ -14,7 +14,7 @@ export const getTopmenu_r = () => async (dispatch) => {
       .catch((err) => {
          dispatch({
             type: GET_ALL_FETCH_FAIL,
-            payload: err.message + ": " + err.config.url,
+            payload: err.message + " " + err.config,
          });
       });
 };
