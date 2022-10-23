@@ -22,7 +22,7 @@ router.route("/:id").get((req, res) => {
          })
          .catch((err) =>
             res.json({
-               message: "Error: raooo" + err + req?.params?.id,
+               messagge: "Error: raooo" + err + req?.params?.id,
                variant: "error",
             })
          );
@@ -34,7 +34,7 @@ router.route("/:id").get((req, res) => {
          })
          .catch((err) =>
             res.json({
-               messagge: "Error: " + err + req?.params?.id,
+               messagge: "Error: raooo2" + err + req?.params?.id,
                variant: "error",
             })
          );
