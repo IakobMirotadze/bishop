@@ -80,11 +80,11 @@ export default {
 
    getCategoriesTree: (data, parrent = null) => {
       const nest = (items, _id = parrent, link = "categories_id") => {
-        console.log(items)
+         console.log(items);
 
-        return items ? items
+         return items ? items
             .filter((item) => item[link] === _id)
-            .map((item) => ({ ...item, children: nest(items, item._id) })) : []
+            .map((item) => ({ ...item, children: nest(items, item._id) })) : [];
       };
 
       const clean = (obj) => {
@@ -101,7 +101,7 @@ export default {
       return clean(nest(data));
    },
    selectCategoriesFilterData: (datas) => {
-      if (datas.length > 0) {
+      if (datas?.length > 0) {
          const data = Object.entries(datas).map(([x, y]) => y._id);
          return data;
       }
