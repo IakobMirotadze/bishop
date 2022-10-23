@@ -7,7 +7,7 @@ const Sitemap = () => { };
 
 export const getServerSideProps = async ({ res }) => {
    const resDataProducts = await axios.get(`${API_URL}/productspublic/all`);
-   const resDataTopmenu = await axios.get(`${API_URL}/topmenupublic/not`);
+   const resDataTopmenu = await axios.get("http://188.40.156.189:5000/topmenupublic/not");
 
    function escapeHtml(text) {
       var map = {
@@ -59,7 +59,7 @@ export const getServerSideProps = async ({ res }) => {
 
       ${resDataTopmenu.data
       .map((url) => {
-         if (!url.link.includes("http") && !url.link.includes("https")) {
+         if (!url.link.includes("http")) {
             return `
                 <url>
                   <loc>${url.link !== ""
@@ -72,7 +72,6 @@ export const getServerSideProps = async ({ res }) => {
                 </url >
               `;
          }
-         return url;
       })
       .join("")}
 

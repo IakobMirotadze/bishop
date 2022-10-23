@@ -32,7 +32,7 @@ HomeApp.getInitialProps = wrapper.getInitialPageProps((store) => async () => {
    await store.dispatch(getBrands_r());
    await store.dispatch(settings_r());
    await store.dispatch(getCategories_r());
-   await store.dispatch(getTopmenu_r());
+   // await store.dispatch(getTopmenu_r());
 });
 
 
