@@ -72,6 +72,7 @@ export const getServerSideProps = async ({ res }) => {
                 </url >
               `;
          }
+         return url;
       })
       .join("")}
 
