@@ -1,15 +1,23 @@
 module.exports = {
-  webpack(config, options) {
-    config.module.rules.push({
-      test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-      use: {
-        loader: "url-loader",
-        options: {
-          limit: 100000,
-        },
-      },
-    });
+   webpack(config, options) {
+      config.module.rules.push({
+         test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+         use: {
+            loader: "url-loader",
+            options: {
+               limit: 100000,
+            },
+         },
+      });
 
-    return config;
-  },
+      return config;
+   },
+   async rewrites() {
+      return [
+         {
+            source: "/api/:path*",
+            destination: "https://estores.ge/api/:path*",
+         },
+      ];
+   },
 };
