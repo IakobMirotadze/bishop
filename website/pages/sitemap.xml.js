@@ -59,7 +59,7 @@ export const getServerSideProps = async ({ res }) => {
 
       ${resDataTopmenu.data
       .map((url) => {
-         if (!url.link.includes("http")) {
+         if (!url.link.includes("http") && !url.link.includes("https")) {
             return `
                 <url>
                   <loc>${url.link !== ""
