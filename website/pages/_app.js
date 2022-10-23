@@ -8,7 +8,7 @@ import AppLayout from "../app/core/Layout";
 import {
    getBrands_r,
    getCategories_r,
-   getTopmenu_r,
+   // getTopmenu_r,
    settings_r,
 } from "../redux/actions";
 
