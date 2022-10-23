@@ -4,7 +4,7 @@ import { API_URL } from "../../../config";
 
 export const getTopmenu_r = () => async (dispatch) => {
    await axios
-      .get(`${API_URL}/topmenupublic/not`)
+      .get("http://188.40.156.189:5000/topmenupublic/not")
       .then((res) => {
          dispatch({
             type: TOPMENU_FETCH,
