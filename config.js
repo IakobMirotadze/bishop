@@ -2,7 +2,7 @@
 const jsonConfig = {
 
     API_URL: "https://estores.ge/backend",
-    WEBSITE_URL: "https://www.estores.ge",
+    WEBSITE_URL: "https://estores.ge",
     IMG_URL: "https://estores.ge/backend/",
 
     maillerConfig: {
