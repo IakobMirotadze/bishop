@@ -7,7 +7,7 @@ const Sitemap = () => { };
 
 export const getServerSideProps = async ({ res }) => {
    const resDataProducts = await axios.get(`${API_URL}/productspublic/all`);
-   const resDataTopmenu = await axios.get("http://188.40.156.189:5000/topmenupublic/not");
+   const resDataTopmenu = await axios.get(`${API_URL}/topmenupublic/not`);
 
    function escapeHtml(text) {
       var map = {
